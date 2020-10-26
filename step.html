@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./step.css">
+    <script src="../../fontawesome/js/all.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header__step">
+            <div class="step1 step--size">
+                <span class=""><i class="fas fa-check-circle"></i></span>
+                <span>Step 1</span>
+                <span><i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="step2 step--size">
+                <span class=""><i class="fas fa-check-circle"></i></span>
+                <span>Step 2</span>
+                <span><i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="step3 step--size">
+                <span class=""><i class="fas fa-check-circle"></i></span>
+                <span>Step 3</span>
+                <span><i class="fas fa-arrow-right"></i></span>
+            </div>
+            <div class="step4 step--size">
+                <span class=""><i class="fas fa-check-circle"></i></span>
+                <span>Step 4</span>
+                <span><i class="fas fa-arrow-right"></i></span>
+            </div>
+        </div>
+        <div class="form">
+            <form action="">
+                <h3 style="text-align:center;margin-top: 20px; margin-bottom: 15px; color: blue;">NHẬP THÔNG TIN</h3>
+                <table >
+                    <tr>
+                        <td style="width: 120px; height: 30px; margin-left: 100px;">Nhập tên</td>
+                        <td><input id="input1" style="width: 280px; height: 20px" type="text" placeholder="Nhập tên"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 120px; height: 30px; margin-left: 100px;">Nhập password</td>
+                        <td><input id="input2" style="width: 280px; height: 20px;" type="password" placeholder="Nhập password"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="checkimg">
+        <div>
+            <img style="width: 100px; height: 70px" src="../vendor/image/hoa bang lang.jpg" alt="">
+        </div>
+        <div>
+            <img style="width: 100px; height: 70px" src="../vendor/image/toco.jpg" alt="">
+        </div>
+        <div>
+            <img style="width: 100px; height: 70px" src="../vendor/image/hongtra.webp" alt="">
+        </div>
+        <div>
+            <img id="becycle" style="width: 100px; height: 70px" src="../vendor/image/dscf0772-15979041364131400907764.jpg" alt="">
+        </div>
+        <div>
+            <img style="width: 100px; height: 70px" src="../vendor/image/21.webp" alt="">
+        </div>
+        <h3 style="text-align: center;width: 100%;color: red;margin: 50px auto;">Chọn ảnh có xe đạp rồi chuyển sang step 3</h3>
+        <input id="valueimg" style="display: none;" type="text">
+    </div>
+    <div class="checkcode">
+        <p style="text-align: center; color: rgb(223, 24, 24); height: 40px; font-size: 20px; line-height: 40px;">Nhập mã code SMS rồi chuyển sang step 4</p>
+        <input id="valuecode" style="width:60%; margin-left: 20%; border-radius: 20px; outline: none; text-align: center; height: 25px;" id="code" type="text" placeholder="Vui lòng nhập mã code">
+    </div>
+    <div class="confirm">
+        <h3 style="text-align:center; margin-bottom: 15px; color: blue;">Xác nhận lại password</h3>
+        <input id="valueconfirm" style="width:60%; margin-left: 20%;border-radius: 20px; outline: none; text-align: center; height: 25px;" type="text" placeholder="Nhập lại password">
+        <button id="btn-confirm" style="width: 30%;height: 30px;background-color: rgb(231, 148, 22); margin-left: 35%;margin-top: 15px;">ĐĂNG NHẬP</button>
+    </div>
+</body>
+<script src="./step.js"></script>
+</html>
